@@ -1,15 +1,40 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
 
-function Card({ carImage, carName, carDescription, background }) {
+const veryLightGray = 'hsl(0, 0%, 95%)';
+
+function Card({ carImage, carName, carDescription, bgColor }) {
+  const [backgroundColor, setBackgroundColor] = useState(veryLightGray);
+  const [fontColor, setFontColor] = useState(bgColor);
+
+  const handleMouseOver = () => {
+    setBackgroundColor(bgColor);
+    setFontColor(veryLightGray)
+  };
+
+  const handleMouseOut = () => {
+    setFontColor(bgColor);
+    setBackgroundColor(veryLightGray);
+  };
+
   return (
     <div className="card"
       style={{
-        backgroundColor: background 
+        backgroundColor: bgColor 
       }}>
-      <img src={carImage} alt={carName} />
-      <h1>{carName}</h1>
-      <p>{carDescription}</p>
-      <a href="index.html">Learn More</a>
+      <img className="card__image" src={carImage} alt={carName} />
+      <h1 className="card__header">{carName}</h1>
+      <p className="card__txt">{carDescription}</p>
+      <a
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        className="card__button"
+        href="index.html" style={{
+          color: fontColor,
+          backgroundColor: backgroundColor
+        }}
+      >Learn More
+      </a>
     </div>
   )
 }

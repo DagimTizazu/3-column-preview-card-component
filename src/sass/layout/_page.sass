@@ -1,2 +1,82 @@
 .card-container
-    margin: 5em 1.5em
+    padding: 88px 24px
+    @media (min-width: 1000px)
+        display: flex
+        padding: 122px 184px
+    @media (min-width: 1200px)
+        padding: 142px 210px 140px
+    @media (min-width: 1440px)
+        padding: 170px 260px
+
+.card
+    padding: 48px 55px 58px 48px
+    &:first-of-type
+        border-top-left-radius: 10px
+        border-top-right-radius: 10px
+        @media (min-width: 1000px)
+            border-top-right-radius: 0
+            border-bottom-left-radius: 10px
+    &:last-of-type
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        @media (min-width: 1000px)
+            border-bottom-left-radius: 0
+            border-top-right-radius: 10px
+    @media (min-width: 1000px)
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-evenly
+        padding: 35px 35px 40px 35px
+    @media (min-width: 1200px)
+        padding: 40px 43px 45px 40px
+    @media (min-width: 1440px)
+        padding: 48px 59px 45px 48px
+
+.card__image
+    margin-bottom: 25px
+    @media (min-width: 1000px)
+        max-width: 33%
+        height: auto
+        margin-bottom: 17px
+    @media (min-width: 1200px)
+        margin-bottom: 22px
+    @media (min-width: 1440px)
+        margin-bottom: 30px
+
+.card__header
+    font:
+        family: $secondary-font
+        size: 2.5em
+        weight: 700
+    color: $very-light-gray
+    text-transform: uppercase
+    margin-bottom: 20px
+    @media (min-width: 1000px)
+        font-size: 1.7em
+        margin-bottom: 15px
+    @media (min-width: 1200px)
+        font-size: 2.05em
+    @media (min-width: 1440px)
+        font-size: 2.5em
+        margin-bottom: 18px
+
+.card__txt
+    font:
+        family: $main-font
+        size: .9em
+    color: $transparent-white
+    line-height: 25px
+    margin-bottom: 35px
+    @media (min-width: 1000px)
+        font-size: .65em
+        line-height: 18px
+        margin-bottom: 60px
+    @media (min-width: 1200px)
+        font-size: .8em
+        line-height: 22px
+        margin-bottom: 65px
+    @media (min-width: 1440px)
+        font-size: .9em
+        line-height: 25px
+        margin-bottom: 82px
