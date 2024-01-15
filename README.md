@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/3columnpreviewcardcomponent-FgBjEF_g5V]
-- Live Site URL: [https://3-column-preview-card-component-theta-flame.vercel.app/]
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/3columnpreviewcardcomponent-FgBjEF_g5V)
+- Live Site URL: [live site](https://3-column-preview-card-component-theta-flame.vercel.app/)
 
 ## My process
 
